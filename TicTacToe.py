@@ -82,7 +82,7 @@ def player_choice(board):
 def replay():
     answer = input('Would you like to play again? Y or N: ')
     return answer == 'Y'
-replay()
+
 
 print('Welcome to Tic Tac Toe!')
 while True: 
