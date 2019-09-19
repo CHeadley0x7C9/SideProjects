@@ -3,15 +3,6 @@ Created a pi to n project using a decorator
 '''
 import math
 
-
-@pi_to_n
-# I created a function that will disple n numbers of decimal places
-def truncate(decimals):
-    multiplier = 10**decimals
-    return int(math.pi*multiplier)/multiplier
-
-
-
 #decorator logic
 def pi_to_n(truncate):
 	#first I will get a function using user input to provide me the decimal place the user choose
@@ -27,3 +18,9 @@ def pi_to_n(truncate):
             else:
                 continue
     return user_input()
+
+@pi_to_n
+# I created a function that will disple n numbers of decimal places
+def truncate(decimals):
+    multiplier = 10**decimals
+    return int(math.pi*multiplier)/multiplier
