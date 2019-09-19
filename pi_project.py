@@ -9,16 +9,18 @@ def pi_to_n(truncate):
     def user_input():
         while True:
             try:
-                d = int(input("Choose a decimal place from 1 - 16: "))
-                if d in range(1,17):
+                d = int(input("Choose a decimal place from 1 - 15: "))
+                if d in range(1,16):
                     print( truncate(d))
                     break
             except:
                 print("sorry try again")
             else:
-                continue
+            	print("Please try again")
+            	continue
     return user_input()
 
+ 
 @pi_to_n
 # I created a function that will disple n numbers of decimal places
 def truncate(decimals):
